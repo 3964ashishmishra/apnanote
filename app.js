@@ -25,7 +25,7 @@ const Notes = require("./model/note");
 
 
 // Port Number
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 
 // Routing Path
