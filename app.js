@@ -34,7 +34,7 @@ app.use('/notes', require('./router/notes'))
 
 // For heroku
 if(process.env.NODE_ENV === "production"){
-    app.use(express.static("client/mynotebook/build"));
+    app.use(express.static("mynotebook/build"));
 }
 
 
