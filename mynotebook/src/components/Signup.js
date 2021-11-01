@@ -69,7 +69,7 @@ const Signup = () => {
                     onChange={onHnadle}
                     id="cpassword" />
                 </div>
-                <button type="submit" className="btn btn-success"  onClick={handleSubmit}>Login</button>
+                <button type="submit" className="btn btn-success"  onClick={handleSubmit}>Sign Up</button>
             </form>
         </div>
         </>
