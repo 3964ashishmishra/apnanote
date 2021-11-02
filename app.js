@@ -11,7 +11,7 @@ app.use(cors())
 dotenv.config({path: './config.env'});
 
 // Requiring database 
-require('./db/conn')
+require("./db/conn")
 
 
 
@@ -34,7 +34,7 @@ app.use('/notes', require('./router/notes'))
 
 // For heroku
 if(process.env.NODE_ENV === "production"){
-    app.use(express.static("mynotebook/build"));
+    app.use(express.static("client/build"));
 }
 
 
