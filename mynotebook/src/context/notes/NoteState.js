@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const NoteState = (props) => {
 
-  const host = "http://localhost:8000"
+  // const host = "http://localhost:8000"
 
   const initialNotes = []
 
@@ -15,7 +15,7 @@ const NoteState = (props) => {
   // Adding a notes
   const getNote = async () => {
 
-    const response = await fetch('http://localhost:8000/notes/fetchnotes', {
+    const response = await fetch('/notes/fetchnotes', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const NoteState = (props) => {
   // Adding a notes
   const addNote = async (title, description, author) => {
 
-    const response = await fetch("http://localhost:8000/notes/addnotes", {
+    const response = await fetch("/notes/addnotes", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const NoteState = (props) => {
 
     
     if (window.confirm("Are You sure you want to delete this note")) {
-      const response = await fetch(`${host}/notes/deletenotes/${id}`, {
+      const response = await fetch(`/notes/deletenotes/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const NoteState = (props) => {
   const editNote = async (id, title, description, author) => {
 
 
-    const response = await fetch(`${host}/notes/updatenotes/${id}`, {
+    const response = await fetch(`/notes/updatenotes/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
