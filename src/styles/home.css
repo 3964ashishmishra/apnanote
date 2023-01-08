@@ -2,6 +2,9 @@
     width: 600px;
 }
 
+.create-button{
+    background-color: #ff7900 !important;
+}
 
 @media(max-width: 600px){
     .addnotes {

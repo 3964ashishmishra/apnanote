@@ -37,7 +37,7 @@ function NoteItem({ note }) {
         <div className="col-md-4 mt-2 mb-2">
 
             <Dialog open={open} onClose={handleClose} >
-                <DialogTitle style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold", fontSize: "2rem", paddingBottom: "0rem" }}>Edit Note</DialogTitle>
+                <DialogTitle style={{ fontFamily: "'Poppins', sans-serif", fontWeight: "bold", fontSize: "2rem", paddingBottom: "0rem"}}>Edit Note</DialogTitle>
                 <form onSubmit={handleSubmit}>
                     <DialogContent style={{ paddingTop: "0.5rem" }}>
                         <DialogContentText style={{ fontFamily: "'Poppins', sans-serif", fontSize: "1rem", marginBottom: "0.5rem" }}>

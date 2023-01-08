@@ -9,6 +9,7 @@ import { AlertContext } from '../context/AlertContext';
 function Notes() {
 
     const { notes, getNotes } = useContext(NoteContext)
+    console.log(notes);
     const navigate = useNavigate()
     const { showAlert } = useContext(AlertContext)
 
@@ -32,11 +33,12 @@ function Notes() {
                 <img className="img-fluid ms-5 mt-3" src={empty} alt="empty" style={{width: "30%", opacity: "0.5"}} />
             </div>
             }
-            {notes.map(note => 
-                <NoteItem key={note._id} note={note} />
+            {notes.map( note =>{
+                 return <NoteItem key={note._id} note={note} />
+            }   
             )}
         </div>
     )
 }
 
-export default Notes
+export default Notes;

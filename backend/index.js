@@ -12,7 +12,7 @@ const notesRoute = require('./routes/notes')
 const app = express()
 
 // mongoose init
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/inotebook'
+const dbUrl = 'mongodb+srv://ashish:ashish123@cluster0.wljbg.mongodb.net/mynotebook?retryWrites=true&w=majority'
 async function main() {
   await mongoose.connect(dbUrl);
   console.log("Database connected");
